@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 
-const config = {
+const config =   {
     apiKey: "AIzaSyABAMtr083esTJBK2vOvRSYkdXQt9MNVLs",
     authDomain: "chat-web-app-dfcaa.firebaseapp.com",
     projectId: "chat-web-app-dfcaa",
