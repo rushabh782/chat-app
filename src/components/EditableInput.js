@@ -1,4 +1,3 @@
-import { check } from 'prettier';
 import React, { useCallback } from 'react';
 import { useState } from 'react';
 import { Alert, Icon, Input, InputGroup } from 'rsuite';
