@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { Alert, Button, Drawer } from 'rsuite';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { useMediaQuery, useModalState } from '../../../misc/custom-hooks';
 import EditableInput from '../../EditableInput';
 import { useCurrentRoom } from '../../../context/current-room.context';
@@ -16,7 +16,7 @@ const EditRoomBtnDrawer = () => {
 
   const updateData = (key, value) => {
     database
-      .ref(`/rooms/${chatId}`)
+      .ref(`rooms/${chatId}`)
       .child(key)
       .set(value)
       .then(() => {
