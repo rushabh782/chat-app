@@ -7,7 +7,7 @@ import { useCurrentRoom } from '../../../context/current-room.context';
 import { database } from '../../../misc/firebase';
 
 const EditRoomBtnDrawer = () => {
-  const { isOpen, open, close } = useModalState;
+  const { isOpen, open, close } = useModalState();
   const { chatId } = useParams();
   const isMobile = useMediaQuery('(max-width: 992px)');
 
