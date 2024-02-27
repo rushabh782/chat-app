@@ -24,7 +24,7 @@ const ImgBtnModal = ({ src, fileName }) => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <a href={src} target="blank" rel="noopener noreferrer">
+          <a href={src} target="_blank" rel="noopener noreferrer">
             View original
           </a>
         </Modal.Footer>
