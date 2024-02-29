@@ -28,7 +28,7 @@ const AudioMsgBtn = ({ afterUpload }) => {
         const file = {
           contentType: snap.metadata.contentType,
           name: snap.metadata.name,
-          url: snap.ref.getDownloadURL(),
+          url: await snap.ref.getDownloadURL(), // <-- await
         };
         setIsUploading(false);
         afterUpload([file]);
