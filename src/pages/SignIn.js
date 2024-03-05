@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from 'firebase/app';
 import { Button, Col, Container, Grid, Panel, Row, Icon, Alert } from 'rsuite';
 import { auth, database } from '../misc/firebase';
+import Modal from '../components/Modal';
 
 const SignIn = () => {
   const signInWithProvider = async provider => {
@@ -34,10 +35,12 @@ const SignIn = () => {
         <Row>
           <Col xs={24} md={12} mdOffset={6}>
             <Panel>
-              <div className="text-center">
-                <h2>Welcome to Chat</h2>
-                <p>Progressive chat platform for neophytes</p>
-              </div>
+              <Modal>
+                <div className="text-center">
+                  <h2>Welcome to Chat</h2>
+                  <p>Progressive chat platform for neophytes</p>
+                </div>
+              </Modal>
 
               <div className="mt-3">
                 <Button block color="blue" onClick={onFaceBookSignIn}>
